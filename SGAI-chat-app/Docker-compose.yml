@@ -1,0 +1,9 @@
+services:
+  sgai-chat:
+    build: .
+    container_name: sgai-chat-container
+    ports:
+      - "9994:9994"
+    volumes:
+      - .:/app  
+    restart: always

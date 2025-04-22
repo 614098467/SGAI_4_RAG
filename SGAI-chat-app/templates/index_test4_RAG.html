@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGAI4RAG_TESTv1.1</title>
+    <link rel="stylesheet" href="/static/index_test4_RAG.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">SGAI</div>
+        <div class="header-title">思极AI-RAG测试v1.1</div>
+        <div class="header-api-des">DIFY_API</div>
+        <form action="/api-form" method="post" class="form-apiform">
+            <textarea class="textarea-apitext" placeholder="请输入您的difyapi" name="api-texterea"></textarea>
+            <button class="button-submit-api-button">提交</button>
+        </form>        
+    </div>
+
+    <div class="current-api-div">当前的API：<span id="current-api-value" class="current-api"></span></div>
+    
+
+
+    <div class="chat-container">
+        <div class="welcome-message">
+            <h1 class="welcome-title">欢迎使用SGAI—RAG测试助手</h1>
+            <p class="welcome-text">我可以帮你把dify中的工作流部署到测试环境中进行测试</p>
+            <p class="welcome-api">将dify的api输入到上方的控制栏，就可以使用了</p>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+    </div>
+
+    <form action="/userinput-submit" method="post" class="form-userinput">
+        <div class="input-container">
+            <textarea class="textarea-userinput" placeholder="输入您的问题..." rows="1" name="user-input" id = "user-input" ></textarea>
+            <button class="button-submit-userinput-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </form>
+
+    <script src="/static/index_test4_RAG.js"></script>
+
+</body>
+</html>
